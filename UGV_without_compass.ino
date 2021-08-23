@@ -53,6 +53,7 @@ void loop()
 }
 float Distance()
 {
+  //The haversine formula is used to calculate the distance between drop location and target location
   float dLat = radians(LAT - lat2);
   float dLon = radians(LNG - lng2);
   float a = sin(dLat/2.0f)*sin(dLat / 2.0f) + cos(radians(lat2)) * cos(radians(LAT)) *
